@@ -9,7 +9,8 @@ import {
   User,
   UserGreeting,
   UserName,
-  Icon
+  Icon,
+  HighilghtCards,
 } from "./styles";
 
 export function Dashboard() {
@@ -30,7 +31,12 @@ export function Dashboard() {
           <Icon name="power" />
         </UserWrapper>
       </Header>
-      <HighilghtCard />
+      
+      <HighilghtCards>
+        <HighilghtCard />
+        <HighilghtCard />
+        <HighilghtCard />
+      </HighilghtCards>
     </Container>
   );
 }
