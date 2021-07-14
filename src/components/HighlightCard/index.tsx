@@ -9,17 +9,29 @@ import {
   LastTransaction,
 } from "./styles"
 
-export function HighilghtCard() {
+interface HighilghtCardProps {
+  title: string;
+  amount: string;
+  lastTransaction: string;
+  type: "up" | "down" | "total"
+}
+
+export function HighilghtCard({ 
+  title, 
+  amount, 
+  lastTransaction 
+}: HighilghtCardProps) {
+
   return (
     <Container>
       <Header>
-        <Title>Entrada</Title>
+        <Title>{title}</Title>
         <Icon name="arrow-up-circle"/>
       </Header>
 
       <Footer>
-        <Amount>ECV 17.400,00</Amount>
-        <LastTransaction>Última entrada dia 13 de Abril</LastTransaction>
+        <Amount>{amount}</Amount>
+        <LastTransaction>{lastTransaction}</LastTransaction>
       </Footer>
     </Container>
   );
