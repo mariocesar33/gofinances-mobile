@@ -11,8 +11,6 @@ export const Container = styled.View`
   padding: 19px 23px;
   padding-bottom: ${ RFValue(42)}px;
   margin-right: 16px;
-
-  height: 300px;
 `;
 export const  Header = styled.View`
   flex-direction: row;
@@ -20,7 +18,7 @@ export const  Header = styled.View`
 `;
 export const  Title = styled.Text`
   font-family: ${ ({theme}) => theme.fonts.regular};
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(16)}px;
 
   color: ${ ({theme}) => theme.colors.text_dark};
 `;
