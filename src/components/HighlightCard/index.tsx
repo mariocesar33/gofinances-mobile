@@ -13,20 +13,27 @@ interface HighilghtCardProps {
   title: string;
   amount: string;
   lastTransaction: string;
-  type: "up" | "down" | "total"
+  type: "up" | "down" | "total";
 }
 
 export function HighilghtCard({ 
+  type,
   title, 
   amount, 
   lastTransaction 
 }: HighilghtCardProps) {
 
+  const icon = {
+    up: "arrow-up-circle",
+    down: "arrow-down-circle",
+    total: "dollar-sign"
+  }
+
   return (
     <Container>
       <Header>
         <Title>{title}</Title>
-        <Icon name="arrow-up-circle"/>
+        <Icon name={icon[type]}/>
       </Header>
 
       <Footer>
