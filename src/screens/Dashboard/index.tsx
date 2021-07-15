@@ -11,6 +11,8 @@ import {
   UserName,
   Icon,
   HighilghtCards,
+  Transactions,
+  Title,
 } from "./styles";
 
 export function Dashboard() {
@@ -37,6 +39,10 @@ export function Dashboard() {
         <HighilghtCard type="down" title="Saídas" amount="1.259,00 ECV" lastTransaction="Última saída dia 03 de abril"/>
         <HighilghtCard type="total" title="Entradas" amount="16.141,00 ECV" lastTransaction="01 à 16 de abril"/>
       </HighilghtCards>
+    
+      <Transactions>
+        <Title>Listagem</Title>
+      </Transactions>
     </Container>
   );
 }
