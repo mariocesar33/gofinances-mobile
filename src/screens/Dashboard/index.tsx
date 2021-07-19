@@ -22,6 +22,7 @@ import {
 export function Dashboard() {
   const data = [
     {
+      type: "positeve",
       title: "Desenvolvimento de site", 
       amount: "12.000,00 ECV" ,
       category: {
@@ -31,22 +32,34 @@ export function Dashboard() {
       date: "13/04/2020"
     },
     {
-      title: "Desenvolvimento de site", 
-      amount: "12.000,00 ECV" ,
+      type: "negative",
+      title: "Hamburgueria Pizzy", 
+      amount: "- 59,00 ECV" ,
       category: {
         name: "venda",
         icon: "dollar-sign"
       },
-      date: "13/04/2020"
+      date: "10/04/2020"
     },
     {
-      title: "Desenvolvimento de site", 
-      amount: "12.000,00 ECV" ,
+      type: "positive",
+      title: "Freeler", 
+      amount: "20.000,00 ECV" ,
       category: {
         name: "venda",
         icon: "dollar-sign"
       },
-      date: "13/04/2020"
+      date: "24/04/2020"
+    },
+    {
+      type: "negative",
+      title: "Renda da casa", 
+      amount: "18.000,00 ECV" ,
+      category: {
+        name: "venda",
+        icon: "dollar-sign"
+      },
+      date: "20/04/2020"
     },
   ];
   return (
